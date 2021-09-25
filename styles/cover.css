@@ -14,6 +14,15 @@
       "e f f";
   }
   
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3 1fr);
+    grid-template-areas:
+      "pa pb pc"
+      "pd pe pf"
+      "pg pg pg";
+  }
+
   #portfolio-image {
     grid-area: a;
   }
@@ -28,6 +37,18 @@
 
   #video {
     grid-area: c;
+  }
+
+  #bustracker {
+    grid-area: pa;
+  }
+
+  #pacman {
+    grid-area: pb;
+  }
+
+  #eyesmove {
+    grid-area: pc;
   }
 
   h1 {
